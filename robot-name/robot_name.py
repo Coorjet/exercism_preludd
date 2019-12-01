@@ -4,19 +4,19 @@ import string
 
 class Robot():
 
-    used_names = set()
+    existingNames = set()
     
     def __init__(self):
         self.reset()
     
     def reset(self):
         self.name = self.getRandomName()
-        self.used_names.add(self.name)
+        self.existingNames.add(self.name)
 
     def getRandomName(self):
         while True:
             newName = self.computeRandomName()
-            if newName not in self.used_names:
+            if newName not in self.existingNames:
                 return newName
     
     def computeRandomName(self):
