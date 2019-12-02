@@ -10,24 +10,14 @@ def concat(lists):
 
 
 def filter(function, list):
-    filteredList = []
-    for element in list:
-        if( function(element) == True ):
-            filteredList.append(element)
-    return filteredList
+     return [ x for x in list if function(x)] 
 
 def length(list):
-    count = 0 ;
-    for element in list:
-        count +=1
-    return count
+    return sum([1 for _ in list])
 
 
 def map(function, list):
-    mappedList = []
-    for element in list:
-        mappedList.append(function(element))
-    return mappedList
+    return [ function(x) for x in list ]
 
 
 def foldl(function, list, initial):

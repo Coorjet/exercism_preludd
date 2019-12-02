@@ -7,8 +7,8 @@ class Node:
 
 class LinkedList:
     def __init__(self):
-        self.firstElement = null
-        self.lastElement = null
+        self.firstNode = None
+        self.lastNode = None
 
     def push(self, value):
         pass
@@ -18,6 +18,6 @@ class LinkedList:
 
     def shift(self):
         pass
-        
+
     def unshift(self, value):
         pass
